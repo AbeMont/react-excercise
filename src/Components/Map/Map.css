@@ -1,0 +1,14 @@
+.Map {
+    height: 180px;
+}
+
+.Maps__label p{
+    margin: 0;
+    padding: 0;
+    font-family: "Avenir Next Regular";
+}
+
+.Maps__label:hover {
+    cursor: pointer;
+    font-weight: bold;
+}

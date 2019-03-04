@@ -1,0 +1,96 @@
+.Restaurant {
+    position: relative;
+}
+
+.Restaurant:hover {
+    cursor: pointer;
+}
+
+.Restaurant__card{
+    min-height: 180px;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    transition: min-height 0.4s ease;
+}
+
+.Restaurant__desc {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    padding: 6px 12px;
+}
+
+.Restaurant__name p {
+    margin: 0;
+    color: #ffffff;
+    font-family: "Avenir Next Demi Bold";
+    font-size: 16px;
+    line-height: 15px;
+    margin-bottom: 6px;
+}
+
+.Restaurant__category p {
+    margin: 0;
+    color: #ffffff;
+    font-family: "Avenir Next Regular";
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.Restaurant__overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/img/cellGradientBackground@2x.png');
+    background-size: cover;
+    background-position-y: 100%;
+    background-repeat: repeat;
+    z-index: 0;
+}
+
+.Restraurant-container {
+    margin-top: 62px;
+}
+
+.restaurant-load {
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    background: #ffffff;
+    position: absolute;
+    animation-name: load;
+    animation-duration: 1s;
+    position: fixed;
+    top: 62px;
+    z-index: -1;
+}
+
+@media(min-width:650px){
+    .Restaurant {
+        flex: 1 0 45%;
+        margin: 10px;
+    }
+    .Restraurant-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 80%;
+        margin: 120px auto 80px auto;
+    }
+}
+
+@keyframes load {
+    from{
+        opacity: 1;
+        z-index: 9999;
+    }
+
+    to {
+        opacity: 0;
+        z-index: 0;
+    }
+}
+
+

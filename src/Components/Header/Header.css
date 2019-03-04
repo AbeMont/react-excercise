@@ -1,0 +1,83 @@
+
+.Header {
+    font-family: "Avenir Next Demi Bold";
+    font-size: 17px;
+    background-color: #43E895;
+    color: #ffffff;
+    padding: 24px 0 8px 0;
+    position: fixed;
+    top: 0;
+    width:100%;
+    z-index: 9999;
+}
+
+.Header__container {
+    width: 90%;
+    margin: auto;
+}
+
+.Header__contents {
+    display: flex;
+    flex-direction: row;
+}
+
+.Header__arrow {
+    flex: 1;
+}
+
+.Header__title {
+    flex: 1;
+    align-self: center;
+}
+
+.Header__title p {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.Header__icon {
+    flex:1;
+}
+
+.Header__icon button {
+    background: transparent;
+    border: none;
+    display: block;
+    margin: 0 auto 0 0;
+    padding: 0;
+}
+
+.Header__icon button:hover {
+    cursor: pointer;
+}
+
+.Header .Header__icon .arrow::before {
+    content: "";
+    display: block;
+    height: 25px;
+    width: 30px;
+    background-image: url("../../assets/img/ic_webBack@2x.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+.Header .Header__icon .map::before {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 30px;
+    background-image: url("../../assets/img/icon_map@2x.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 10px 0 auto;
+}
+
+@media(min-width:650px) {
+    .Header__container {
+        width: 80%;
+    }
+}
